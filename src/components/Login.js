@@ -68,7 +68,7 @@ class Login extends React.Component {
 
   submitForm = (e) => {
     e.preventDefault()
-    axios.post(process.env.REACT_APP_API_SERVER_BASE_URL + '/login/', {
+    axios.post(process.env.REACT_APP_API_SERVER_BASE_URL + 'login/', {
       'email': this.state.email,
       'password': this.state.password
     })
