@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import axios from 'axios';
 
-import wood from '../assets/wood.jpeg';
 import wood2 from '../assets/wood2.jpg';
 import Card from './Card'
 

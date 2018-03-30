@@ -1,10 +1,7 @@
 import React from 'react';
 import styled, {keyframes} from 'styled-components';
 import axios from 'axios';
-import cover from '../assets/cover.jpg';
 import phone from '../assets/phone.jpeg';
-
-import Card from './Card';
 
 
 const transmit = keyframes`
@@ -24,21 +21,21 @@ const transmit = keyframes`
   }
 `
 
-const slideIn = keyframes`
+// const slideIn = keyframes`
 
-  0% {
-    transform: translateX(-400px);
-  }
+//   0% {
+//     transform: translateX(-400px);
+//   }
 
-  80% {
-    transform: translateX(20px);
-  }
+//   80% {
+//     transform: translateX(20px);
+//   }
 
-  100% {
-    transform: translateX(0);
-  }
+//   100% {
+//     transform: translateX(0);
+//   }
 
-`
+// `
 
 const fadeIn = keyframes`
 
