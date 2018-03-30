@@ -229,7 +229,7 @@ class Main extends React.Component {
 
     if (this.state.link) {
 
-      axios.post('http://localhost:8000/create-link/', {
+      axios.post(process.env.REACT_APP_API_SERVER_BASE_URL + 'create-link/', {
         "long_url": this.state.link
       }, {
         headers: { Authorization: 'Token ' + localStorage.getItem('user_token')}

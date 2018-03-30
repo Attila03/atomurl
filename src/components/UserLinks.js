@@ -44,7 +44,7 @@ class UserLinks extends React.Component {
   }
 
   componentDidMount () {
-    axios.get('http://localhost:8000/get-links/', {
+    axios.get(process.env.REACT_APP_API_SERVER_BASE_URL + 'get-links/', {
       headers: {
         Authorization: 'Token ' + localStorage.getItem('user_token')
       }
@@ -56,7 +56,7 @@ class UserLinks extends React.Component {
   }
 
   deleteLink = (id) => {
-    axios.delete('http://localhost:8000/delete-link/' + id, {
+    axios.delete(process.env.REACT_APP_API_SERVER_BASE_URL + 'delete-link/' + id, {
       headers: {
         Authorization: 'Token ' + localStorage.getItem('user_token')
       }
